@@ -5,9 +5,9 @@ body {
   font-family: "roboto", sans-serif;
 }
 :root {
-  --background-color: #0f183f;
-  --background-color2: #2e3f8d;
-  --color: #a7a7a7;
+  --background-color: #49225b;
+  --background-color2: #a56abd;
+  --color: #f5ebfa;
   --shaddow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   --shaddow2: 5px 5px 10px rgba(255, 255, 255, 0.349);
 }
@@ -52,10 +52,12 @@ body {
 }
 .about {
   display: flex;
+  flex-direction: column;
   background-color: var(--background-color);
-  width: 100%;
-  height: 100vh;
-  padding: 8rem 7% 1.4rem;
+  padding: 1rem 7% 0.4rem;
+}
+.main {
+  display: flex;
 }
 .foto {
   display: flex;
@@ -104,13 +106,15 @@ body {
   height: 100vh;
   background-color: var(--background-color);
 }
-.services h1 {
-  color: white;
-  display: flex;
-  margin: 40px;
-  font-family: sans-serif;
-  font-size: 3rem;
-  font-weight: 900;
+.services h1,
+.about h1 {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 5rem;
+  font-family: "Edu AU VIC WA NT Arrows", serif;
+  color: var(--color);
+  text-transform: capitalize;
+  font-size: 2.5rem;
 }
 .d-services {
   display: flex;
